@@ -1,9 +1,35 @@
 # Remote Exec
 Simple program to exec command remotely in multiple server using ssh.
 
+
+
+
 ### Download
+
+#### using installer
+if you use MacOS, you can use brew
 ```bash
-wget https://github.com/ahmadmuzakki/rexec/raw/master/rexec
+https://brew.sh
+```
+then after brew installed, please install wget
+```bash
+brew install wget
+```
+then you can directly install this repository
+```bash
+wget https://github.com/hendrap259/rexec/raw/master/rexec
+```
+
+#### using git clone
+```bash
+git clone https://github.com/hendrap259/rexec
+go mod init github.com/hendrap259/rexec
+go mod tidy
+go build
+```
+then you can move the output binary into your /usr/local/bin
+```bash
+mv rexec /usr/local/bin/rexec
 ```
 
 ### Usage
