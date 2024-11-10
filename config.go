@@ -67,7 +67,12 @@ func readHostConfig(group string) ([]string, error) {
 	return hosts, err
 }
 
-var example = `# Put host config to be line separated. example:
+var example = `
+[consul-config]
+ConsulBaseURL = "https://consul-gcp.tokopedia.net"
+User = "root" 
+
+# Put host config to be line separated. example:
 # root@192.168.0.123
 # root@192.168.0.124
 #
